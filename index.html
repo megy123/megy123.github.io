@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Test Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px #00000012;
+    }
+    button {
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Analytics Test Site</h1>
+    <p>
+      This website is used for testing
+      analytics integrations.
+    </p>
+
+    <button onclick="testEvent()">
+      Test Button
+    </button>
+
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function testEvent() {
+      document.getElementById("result").textContent =
+        "Test event triggered successfully!";
+
+      // Tu neskôr môžeme pridať Piwik PRO event tracking.
+    }
+  </script>
+</body>
+</html>
